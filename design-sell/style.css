@@ -1,5 +1,54 @@
+/*
+    All of the values here can be changed to your liking after the purchase
+    of this website template.
+*/
+
+body {
+    background-color: darkcyan;
+}
+
 .mainHead {
     text-align: center;
     color: deepskyblue;
-    font-family: fantasy;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.rightCol {
+    border: black 3px solid;
+    float: right;
+    width: 45%;
+    height: 700px;
+    margin-right: 2.5%;
+    margin-bottom: 10px;
+}
+
+.leftCol {
+    border: black 3px solid;
+    float: left;
+    width: 45%;
+    height: 700px;
+    margin-left: 2.5%;
+    margin-bottom: 10px;
+}
+
+.leftCol {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+}
+
+.rightCol > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.footerPara {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    clear: both;
 }
