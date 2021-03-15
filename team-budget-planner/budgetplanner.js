@@ -10,7 +10,7 @@ function populateTable() {
     });
 
     var totalObj = {
-        clientName: "<b>Total</b>s",
+        clientName: "<b>Total</b>",
         projName: "",
         budget: total
     };
@@ -43,8 +43,6 @@ function readFormData() {
     obj.projName = document.getElementById("projName").value;
     obj.budget = document.getElementById("budget").value;
 
-    console.log(obj)
-
     return obj;
 }
 
@@ -64,6 +62,7 @@ function insertNewRecord(data) {
     cell3.innerHTML = "$" + data.budget;
 }
 
+// Clearing form fields
 function resetData() {
     document.getElementById("clientName").value = "";
     document.getElementById("projName").value = "";
