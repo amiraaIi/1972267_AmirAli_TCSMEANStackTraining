@@ -6,23 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program Managers</title>
     <script src="budgetplanner.js"></script>
+    <style>
+        label {
+            width:180px;
+            clear:left;
+            text-align:right;
+            padding-right:20px;
+        }
+
+        .formInput, label {
+            float:left;
+        }
+    </style>
 </head>
 <body>
     <h3>Add New Budget</h3>
     <form>
         <label>Client Name</label>
-        <input type="text" id="clientName" required /><br/>
+        <input class="formInput" type="text" id="clientName" required><br/>
 
-        <label>Proiject Name</label>
-        <input type="text" id="projName" required /><br/>
+        <label>Project Name</label>
+        <input class="formInput" type="text" id="projName" required><br/>
 
         <label>Budget</label>
-        <input type="text" id="budget" required /><br/>
+        <input class="formInput" type="text" id="budget" required><br/>
 
 
+        <br/>
         <input type="button" value="Add" onclick="onFormSubmit()">
-        <input type="button" value="Clear" onclick="resetData()"><br/>
-        <input type="button" value="Back" href="index.html"><br/>
+        <input type="button" value="Clear" onclick="resetData()"><br/><br/>
+        <a href="index.html"><input type="button" value="Back"></a><br/>
     </form>
 </body>
 </html>

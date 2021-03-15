@@ -1,39 +1,67 @@
-var budgetObj = [];
-
-function storeInSession() {
-    sessionStorage.setItem("budgetInfo", budgetObj);
-}
-
-function retrieveFromSession() {
+// Populating the table with the data from the session storage
+function populateTable() {
     var obj = sessionStorage.getItem("budgetInfo");
-    console.log(obj);
+    var data = JSON.parse(obj);
+    var total = 0;
+ 
+    data.forEach(element => {
+          insertNewRecord(element);
+          total += parseInt(element.budget);
+    });
+
+    var totalObj = {
+        clientName: "<b>Total</b>s",
+        projName: "",
+        budget: total
+    };
+
+    insertNewRecord(totalObj);
 }
 
+// Storing the data from the for submitted by the user
 function onFormSubmit() {
     var data = readFormData();
-    insertNewRecord(data);
+
     resetData();
-    budgetObj.push(data);
+
+    var oldData = JSON.parse(sessionStorage.getItem("budgetInfo"));
+
+    if(oldData == null) {
+        oldData = [];
+    }
+
+    oldData.push(data);
+
+    sessionStorage.setItem("budgetInfo", JSON.stringify(oldData));
 }
 
+// Processing info from the user
 function readFormData() {
-    var obj = {}; // Empty object
+    var obj = {};
+
     obj.clientName = document.getElementById("clientName").value;
     obj.projName = document.getElementById("projName").value;
     obj.budget = document.getElementById("budget").value;
+
     console.log(obj)
+
     return obj;
 }
 
+// Inserting new rows with the data from the session storage
 function insertNewRecord(data) {
-    var table = document.getElementById("employeeList");
+    var table = document.getElementById("budgetList");
     var body = table.getElementsByTagName("tbody")[0];
+
     var newRow = body.insertRow(body.length);
+
     var cell1 = newRow.insertCell(0);
     var cell2 = newRow.insertCell(1);
-    cell1.innerHTML = data.name;
-    cell2.innerHTML = data.age;
-    
+    var cell3 = newRow.insertCell(2);
+
+    cell1.innerHTML = data.clientName;
+    cell2.innerHTML = data.projName;
+    cell3.innerHTML = "$" + data.budget;
 }
 
 function resetData() {
