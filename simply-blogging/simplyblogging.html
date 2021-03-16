@@ -32,12 +32,30 @@
     <hr>
     <div id="form">
         <form class="form-group">
-            <label>Title: </label>
-            <input type="text" name="title" id="title" class="form-control"><br>
-            <label>Description: </label>
-            <textarea name="desc" id="desc" cols="20" rows="5" class="form-control"></textarea><br>
-            <label>Image (optional): </label>
-            <input type="file" name="image" id="image" class="form-control"><br>
+            <div class="row">
+                <div class="col-1">
+                    <label>Title: </label>
+                </div>
+                <div class="col-3">
+                    <input type="text" name="title" id="title" class="form-control"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label>Description: </label>
+                </div>
+                <div class="col-3">
+                    <textarea name="desc" id="desc" cols="20" rows="5" class="form-control"></textarea><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label>Image (optional): </label>
+                </div>
+                <div class="col-3">
+                    <input type="file" name="image" id="image" class="form-control"><br>
+                </div>
+            </div>
             <input type="button" value="Add Blog" class="btn btn-primary" onclick="addBlog()">
         </form>
         <hr>
