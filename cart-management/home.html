@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Management Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Cart Management</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="cart.html" class="btn btn-primary">Checkout</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <p class="total">Cart Total: </p>
+            </div>
+            <div class="col-9">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card border-danger mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="https://sugarspunrun.com/wp-content/uploads/2020/07/Guacamole-recipe-2-of-8.jpg" alt="Card image cap">
+                    <div class="card-header">Hot Item!</div>
+                    <div class="card-body text-danger">
+                      <h5 class="card-title">Friggin' Delicious&#8482; Guac</h5>
+                      <p class="card-text">Price: <del>$600</del> $100</p>
+                      <input type="button" class="btn btn-primary" value="Add to Cart" onclick="addToCart()">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://www.thespruceeats.com/thmb/fKcFSrpc2Xxelm8YF90dDiDVU60=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/easy-microwave-mashed-potatoes-3059678_hero-01-520a91abceb44719ae5a24a179af8645.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Pretty Average&#8482; Mashed Potatoes</h5>
+                      <p class="card-text">Price: $60</p>
+                      <input type="button" class="btn btn-primary" value="Add to Cart" onclick="addToCart()">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://www.themediterraneandish.com/wp-content/uploads/2015/01/How-to-make-hummus-recipe-5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Bottom Tier&#8482; Hummus</h5>
+                      <p class="card-text">Price: $30</p>
+                      <input type="button" class="btn btn-primary" value="Add to Cart" onclick="addToCart()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://laurenslatest.com/wp-content/uploads/2020/08/vanilla-ice-cream-5-copy.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Not Bad&#8482; Ice Cream</h5>
+                      <p class="card-text">Price: $70</p>
+                      <input type="button" class="btn btn-primary" value="Add to Cart" onclick="addToCart()">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://hips.hearstapps.com/vidthumb/images/180820-bookazine-delish-01280-1536610916.jpg?crop=1xw:1xh;center,top&resize=768:*" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Decent At Best&#8482; Lasagna</h5>
+                      <p class="card-text">Price: $120</p>
+                      <input type="button" class="btn btn-primary" value="Add to Cart" onclick="addToCart()">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="https://static.scientificamerican.com/sciam/cache/file/32665E6F-8D90-4567-9769D59E11DB7F26_source.jpg?w=590&h=800&7E4B4CAD-CAE1-4726-93D6A160C2B068B2" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">A Cat</h5>
+                      <p class="card-text">Price: $1000</p>
+                      <input type="button" class="btn btn-primary" value="Add to Cart" onclick="addToCart()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
