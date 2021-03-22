@@ -33,7 +33,7 @@ function storeItem(item: cartItem) {
 function insertNewItem(item) {
     var table = document.getElementById("cartList");
     var body = table.getElementsByTagName("tbody")[0];
-    var newRow = body.insertRow(body.rows.length);
+    var newRow = body.insertRow();
     var cell1 = newRow.insertCell(0);
     var cell2 = newRow.insertCell(1);
 
@@ -45,6 +45,12 @@ function insertNewItem(item) {
 function populateCart() {
     var obj = sessionStorage.getItem("cartInfo");
     var data = JSON.parse(obj);
+
+    if (data == null) {
+        alert("Cart is empty. Please return to the store page and add items to your cart.");
+        location.href = "home.html";
+        return;
+    }
  
     data.forEach(element => {
           insertNewItem(element);
@@ -76,7 +82,7 @@ function setCartTotal() {
         return;
     }
 
-    total.innerHTML = "Cart Total: " + getTotal(cart).price;
+    total.innerHTML = "Cart Total: $" + getTotal(cart).price;
 }
 
 function emptyCart() {
