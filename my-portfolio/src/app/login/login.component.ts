@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
     console.log(userData.pass);
 
     if(user1 == userData.user && pass1 == userData.pass) {
-      this.msg = "Successfully logged in";
+      sessionStorage.setItem("token", "1");
       this.router.navigate(["portfolio"]);
     }
     else {
