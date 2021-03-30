@@ -1,0 +1,201 @@
+[
+    {
+        "question": "1. 1 + 2?",
+        "choices": [{
+            "answer": "4",
+            "isCorrect": false
+        },
+        {
+            "answer": "6",
+            "isCorrect": false
+        },
+        {
+            "answer": "127",
+            "isCorrect": false
+        },
+        {
+            "answer": "3",
+            "isCorrect": true
+        }]            
+    },
+         
+    {
+        "question": "2. 3 + 9?",
+        "choices": [{
+            "answer": "12",
+            "isCorrect": true
+        },
+        {
+            "answer": "78",
+            "isCorrect": false
+        },
+        {
+            "answer": "15",
+            "isCorrect": false
+        },
+        {
+            "answer": "All of the above",
+            "isCorrect": false
+        }]         
+    },
+
+    {
+        "question": "3. 7 + 13?",
+        "choices": [{
+            "answer": "Could be anything tbh",
+            "isCorrect": false
+        },
+        {
+            "answer": "57",
+            "isCorrect": false
+        },
+        {
+            "answer": "20",
+            "isCorrect": true
+        },
+        {
+            "answer": "17",
+            "isCorrect": false
+        }]            
+    },
+
+    {
+        "question": "4. 14 + 26?",
+        "choices": [{
+            "answer": "40",
+            "isCorrect": true
+        },
+        {
+            "answer": "12",
+            "isCorrect": false
+        },
+        {
+            "answer": "61",
+            "isCorrect": false
+        },
+        {
+            "answer": "64",
+            "isCorrect": false
+        }]            
+    },
+
+    {
+        "question": "5. 50 + 25?",
+        "choices": [{
+            "answer": "71",
+            "isCorrect": false
+        },
+        {
+            "answer": "85",
+            "isCorrect": false
+        },
+        {
+            "answer": "75",
+            "isCorrect": true
+        },
+        {
+            "answer": "5",
+            "isCorrect": false
+        }]            
+    },
+
+    {
+        "question": "6. 10 + 10?",
+        "choices": [{
+            "answer": "20",
+            "isCorrect": true
+        },
+        {
+            "answer": "53",
+            "isCorrect": false
+        },
+        {
+            "answer": "61",
+            "isCorrect": false
+        },
+        {
+            "answer": "745",
+            "isCorrect": false
+        }]            
+    },
+
+    {
+        "question": "7. 57 + 13?",
+        "choices": [{
+            "answer": "40",
+            "isCorrect": false
+        },
+        {
+            "answer": "2763",
+            "isCorrect": false
+        },
+        {
+            "answer": "70",
+            "isCorrect": true
+        },
+        {
+            "answer": "64",
+            "isCorrect": false
+        }]            
+    },
+
+    {
+        "question": "8. 41 + 62?",
+        "choices": [{
+            "answer": "75",
+            "isCorrect": false
+        },
+        {
+            "answer": "91",
+            "isCorrect": false
+        },
+        {
+            "answer": "103",
+            "isCorrect": true
+        },
+        {
+            "answer": "5",
+            "isCorrect": false
+        }]            
+    },
+
+    {
+        "question": "9. 64 + 19?",
+        "choices": [{
+            "answer": "83",
+            "isCorrect": true
+        },
+        {
+            "answer": "45",
+            "isCorrect": false
+        },
+        {
+            "answer": "732",
+            "isCorrect": false
+        },
+        {
+            "answer": "35",
+            "isCorrect": false
+        }]            
+    },
+
+    {
+        "question": "10. 85 + 23?",
+        "choices": [{
+            "answer": "64",
+            "isCorrect": false
+        },
+        {
+            "answer": "108",
+            "isCorrect": true
+        },
+        {
+            "answer": "23",
+            "isCorrect": false
+        },
+        {
+            "answer": "72",
+            "isCorrect": false
+        }]            
+    }
+]
