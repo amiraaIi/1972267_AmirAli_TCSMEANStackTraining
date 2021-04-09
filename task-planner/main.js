@@ -1,7 +1,6 @@
 let http = require("http");
 let url = require("url");
 let port = 9999;
-//let page = require("./taskadd")
 let fs = require("fs");
 let taskFile = fs.readFileSync("tasks.json");
 let tasks = JSON.parse(taskFile);
