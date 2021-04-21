@@ -36,7 +36,9 @@ db.once("open", () => {
             chatCount++;
             name = msg.name;
             message = msg.message;
+            
             let chat = new Chat({_id: chatCount, name: name, msg: message});
+
             chat.save((err, result) => {
                 if(!err) {
                     console.log("Record Inserted " + result);
